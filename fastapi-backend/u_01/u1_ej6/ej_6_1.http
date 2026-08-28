@@ -1,0 +1,15 @@
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/?q=hola' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/?q=ab' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/?q=abcdefghijk' \
+  -H 'accept: application/json'

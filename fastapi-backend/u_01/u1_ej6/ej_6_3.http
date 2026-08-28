@@ -1,0 +1,32 @@
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/?limit=20&offset=40' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/?order_by=updated_at' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/?tags=fastapi&tags=react' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/?limit=100&offset=0&order_by=created_at&tags=api&tags=docs' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/?limit=0' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/?limit=101' \
+  -H 'accept: application/json'
+###
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/?offset=-1' \
+  -H 'accept: application/json'
