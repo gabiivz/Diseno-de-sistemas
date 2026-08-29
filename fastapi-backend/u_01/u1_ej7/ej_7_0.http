@@ -1,0 +1,17 @@
+### 
+@host = http://127.0.0.1:8000
+
+
+GET {{host}}/caso-0/sin-reglas
+
+###
+
+GET {{host}}/caso-1/exito
+
+###
+
+GET {{host}}/caso-2/error-servidor
+
+###
+
+GET {{host}}/caso-3/filtrado

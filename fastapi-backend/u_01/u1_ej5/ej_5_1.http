@@ -1,0 +1,21 @@
+curl -X 'POST' \
+  'http://127.0.0.1:8000/items/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "name": "Laptop",
+  "description": "una compu potente",
+  "price": 1200.50,
+  "tax": 120.00
+}'
+###
+curl -X 'POST' \
+  'http://127.0.0.1:8000/items/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "name": "cafetera",
+  "description": "italiana",
+  "price": 120.50,
+  "tax": 10.00
+}'

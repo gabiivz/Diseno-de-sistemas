@@ -1,0 +1,53 @@
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/' \
+  -H 'accept: application/json'
+
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/?skip=1&limit=2' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/abc' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/abc?q=hola' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/abc?q=hola' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/users/7/items/abc' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/users/7/items/abc?q=hola' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/users/7/items/abc?short=true' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/users/7/items/abc?q=hola&short=true' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/users/7/items/abc?short=false' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/abc?needy=si' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items/123?needy=pan' \
+  -H 'accept: application/json'
+###
+curl -X 'GET' \
+  'http://127.0.0.1:8000/items1/abc' \
+  -H 'accept: application/json'
